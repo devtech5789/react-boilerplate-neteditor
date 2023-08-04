@@ -1,0 +1,130 @@
+.rechart-wrap {
+  display: block;
+  width: 920px;
+  // height: 800px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-size: 12px;
+
+
+.recharts-layer {
+  &.recharts-line {
+    path {
+      stroke-width: 4;
+    }
+  }
+}
+
+.recharts-cartesian-axis-ticks {
+
+  // .recharts-layer:first-child {
+  //   display: none;
+  // }
+
+  // .recharts-layer:last-child {
+  //   display: none;
+  // }
+  
+}
+
+.target {
+ 
+  line {
+    stroke-width: 2;
+  }
+}
+
+.today {
+  line {
+    stroke-width: 1;
+  }
+}
+
+.recharts-layer  {
+  .recharts-cartesian-axis-tick {
+    text {
+      fill: #838383;
+    }
+  }
+}
+
+.low {
+  text {
+    fill: #838383;
+  } 
+}
+
+.fair {
+  text {
+    fill: #838383;
+  }
+}
+
+.recharts-line-dots {
+  circle {
+    stroke: #fff;
+    stroke-width: 3;
+    fill: rgb(32, 174, 236);
+
+    &:hover {
+
+    }
+  }
+  circle:not(:last-child) {
+    display: none;
+  }
+}
+
+.recharts-active-dot {
+  circle {
+    stroke: #fff;
+    stroke-width: 0;
+    fill: rgb(32, 174, 236);
+  }
+}
+.refToday {
+  & > path {
+    fill: #fafafa;
+    fill-opacity: 1;
+  }
+
+  text {
+    font-size: 14px;
+
+    &.scoreNum {
+      font-size: 25px;
+      fill: rgb(32, 174, 236);
+      font-weight: 700;
+    }
+  }
+}
+
+.refDot {
+
+  circle {
+    stroke-width: 3; 
+  }
+
+  text {
+    font-size: 18px;
+  }
+}
+
+}
+
+// Bar chart
+.recharts-layer.recharts-bar-rectangle {
+  path {
+    fill: linear-gradient(to top, blue, green)
+  }
+}
+
+
+.barchart-wrap {
+  display: block;
+  width: 480px;
+  // height: 400px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  font-size: 12px;
+}

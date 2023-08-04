@@ -1,0 +1,40 @@
+.header {
+  background-color: #9eecea;
+  padding: 10px 0;
+}
+
+.opened,
+.closed {
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.opened .body {
+  display: block;
+}
+
+.closed .body {
+  display: none;
+}
+
+.opened .header span {
+  transform: rotateZ(90deg);
+}
+
+.body img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.body p {
+  padding: 10px 15px;
+  background-color: #f5f9f9;
+}
+
+.icon {
+  display: block;
+  transform: rotateY(45deg);
+  font-size: 24px;
+}
